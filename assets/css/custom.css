@@ -100,9 +100,11 @@ ul, ol {
 }
 .container-arr{
     display: flex;
+    gap: 100px;
 }
 .container-abj{
     display: flex;
+    gap: 100px;
 }
 .cuadro-informacion1 {
     width: 300px;

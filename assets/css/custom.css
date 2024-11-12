@@ -90,13 +90,23 @@ ul, ol {
     margin-left: 20px;
     font-size: 14px;
 }
+.container-pro-all{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
 .container-tit{
     background-color: #9ad1a3;
     color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
 }
 .container-tex{
-    background-color: #729B79;
     color: white;
+    text-align: center;
+    flex-wrap: wrap;
 }
 .container-arr{
     display: flex;

@@ -1,6 +1,12 @@
+/* 
+Verde clarito:BACDB0
+Verde:729B79
+Azul/gris:475B63
+negro:2E2C2F
+*/
 header{
-    background-color: gray;
-    color: black;
+    background-color: #729B79;
+    color: white;
     display: flex;
     padding: 10px 1em;
     margin: 0 auto;
@@ -11,7 +17,8 @@ footer {
     display: flex;
     justify-content: left;
     padding: 10px;
-    background-color: gray;
+    background-color: #2E2C2F;
+    color: white;
 }
 nav{
     display: flex;

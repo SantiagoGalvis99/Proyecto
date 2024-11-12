@@ -55,35 +55,25 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-
 .container-img img {
     border-radius: 8px;
     margin-bottom: 20px;
 }
-
-
 .container-img h2 {
     text-align: center;
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
 }
-
-
 .planta-info {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 30px;
 }
-
-
 .left-side {
     flex: 1;
 }
-
-
 .right-side {
     flex: 0.5;
     background-color: #fafafa;
@@ -91,15 +81,11 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
 h3, h4 {
     font-size: 20px;
     color: #555;
     margin-top: 15px;
 }
-
-
 ul, ol {
     margin-left: 20px;
     font-size: 14px;

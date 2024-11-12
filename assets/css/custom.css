@@ -201,14 +201,15 @@ ul, ol {
 }
 
 
-body {
+
+.body1 {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #475B63;
 }
 
-.container {
+.container1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;

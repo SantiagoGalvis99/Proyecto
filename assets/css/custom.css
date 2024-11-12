@@ -179,3 +179,23 @@ ul, ol {
 .social-menu ul.social-icons a:hover i {
     transform: scale(1.2); 
 }
+.div1 {
+    margin: 20px;
+    padding: 15px;
+    background-image: linear-gradient(to left bottom, #bacdb0, #b5d1a5, #afd69a, #a9da8f, #a3de83);
+    color: black;
+    border-radius: 10px;
+    box-shadow: -8px 8px 2px 0px rgba(0,0,0,0.1);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+.texto1 {
+    margin: 1px;
+    padding: 10px;
+    padding-left: 15px;
+    background-image: linear-gradient(to left bottom, #fff4ea, #f2e9d9, #e3dfc9, #d0d6bb, #bacdb0);
+    color: black;
+    border-radius: 8px;
+    box-shadow: -5px 5px 1px 0px rgba(0,0,0,0.1);
+}

@@ -90,3 +90,20 @@ ul, ol {
     margin-left: 20px;
     font-size: 14px;
 }
+.container{
+
+}
+.container-tit{
+    background-color: #9ad1a3;
+    color: black;
+}
+.container-tex{
+    background-color: #729B79;
+    color: white;
+}
+.container-arr{
+    display: flex;
+}
+.container-abj{
+    display: flex;
+}

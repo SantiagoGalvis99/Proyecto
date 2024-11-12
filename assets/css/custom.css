@@ -1,6 +1,6 @@
 header{
-    background-color: gray;
-    color: black;
+    background-color: #729B79;
+    color: white;
     display: flex;
     padding: 10px 1em;
     margin: 0 auto;
@@ -11,7 +11,8 @@ footer {
     display: flex;
     justify-content: left;
     padding: 10px;
-    background-color: gray;
+    background-color: #2E2C2F;
+    color: white;
 }
 nav{
     display: flex;
@@ -38,15 +39,12 @@ nav ul li a:hover{
     background-color: rgb(192, 0, 0);
     padding: 11px;
 }
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(https://st4.depositphotos.com/7555982/38986/v/950/depositphotos_389861718-stock-illustration-green-summer-tropical-background-exotic.jpg);
+    background-color: #475B63;
 }
-   
-
 .container-img {
     display: flex;
     flex-direction: column;
@@ -57,35 +55,25 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-
 .container-img img {
     border-radius: 8px;
     margin-bottom: 20px;
 }
-
-
 .container-img h2 {
     text-align: center;
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
 }
-
-
 .planta-info {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 30px;
 }
-
-
 .left-side {
     flex: 1;
 }
-
-
 .right-side {
     flex: 0.5;
     background-color: #fafafa;
@@ -93,21 +81,29 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
 h3, h4 {
     font-size: 20px;
     color: #555;
     margin-top: 15px;
 }
-
-
 ul, ol {
     margin-left: 20px;
     font-size: 14px;
-    
 }
-
+.container-tit{
+    background-color: #9ad1a3;
+    color: black;
+}
+.container-tex{
+    background-color: #729B79;
+    color: white;
+}
+.container-arr{
+    display: flex;
+}
+.container-abj{
+    display: flex;
+}
 .cuadro-informacion1 {
     width: 300px;
     padding: 20px;
@@ -116,24 +112,18 @@ ul, ol {
     background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
-    
-
 }
-
 .cuadro-informacion h2 {
     text-align: center;
     color: #0c2136;
 }
-
 .cuadro-informacion p {
     font-size: 14px;
     margin: 8px 0;
 }
-
 .cuadro-informacion p strong {
     font-weight: bold;
 }
-
 .grupocontacto{
     display: flex;
     justify-content: center;
@@ -141,11 +131,8 @@ ul, ol {
     gap: 20px;
     border-radius: 50%;
     box-shadow: 0px 0px 15px 5px rgba(10, 100, 32, 0.3);
-    background-color: rgb(36, 90, 72);
-   
-    
+    background-color: rgb(36, 90, 72);   
 }
-
 .social-menu ul li a:hover{
     transform:translate(0, -10%)
 }
@@ -156,8 +143,6 @@ ul, ol {
     gap: 20px; 
     font-size: 30px; 
 }
-   
-
 .social-menu ul.social-icons {
     display: flex;           
     justify-content: center; 
@@ -165,26 +150,20 @@ ul, ol {
     padding: 0;              
     list-style-type: none;   
 }
-
-
 .social-menu ul.social-icons li {
     font-size: 30px; 
 }
-
 .social-menu ul.social-icons a {
     color: #333;  
     text-decoration: none; 
     transition: color 0.3s ease; 
 }
-
 .social-menu ul.social-icons a:hover {
     color: #0077b5; 
 }
-
 .social-menu ul.social-icons i {
     transition: transform 0.3s ease; 
 }
-
 .social-menu ul.social-icons a:hover i {
     transform: scale(1.2); 
 }

@@ -1,50 +1,142 @@
-header{
+body {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #475B63;
+}
+header {
     background-color: #729B79;
-    color: white;
-    display: flex;
-    padding: 10px 1em;
-    margin: 0 auto;
+    padding: 20px;
+    height: 20px;
+    position: fixed;
     justify-content: space-between;
-    z-index: 1000;
-}
-footer {
+    align-items: center;
     display: flex;
-    justify-content: left;
-    padding: 10px;
-    background-color: #2E2C2F;
-    color: white;
+    width: 100%;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
-nav ul{
+nav ul {
     display: flex;
     gap: 1em;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-nav ul li{
-    margin: 0;
-}
-nav ul li a{
-    color: black;
+nav ul li a {
+    color: #333;
     text-decoration: none;
-    padding: 0.5 1em;
+    padding: 0.5em 1em;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
 }
-nav ul li a:hover{
-    background-color: rgb(192, 0, 0);
-    padding: 11px;
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: rgb(192, 0, 0);
+    transition: width 0.3s;
+    bottom: 0;
+    left: 0;
 }
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #475B63;
+nav ul li a:hover {
+    color: rgb(192, 0, 0);
+    transform: translateY(-2px);
 }
+nav ul li a:hover::after {
+    width: 100%;
+}
+.seccion-bienvenida {
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+    background-color: #9ad1a3;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.seccion-productos {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.productos-G {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.productos-I {
+    display: flex;
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.productos-I img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.productos-I h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+footer {
+    background-color: #2E2C2F;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+article {
+    margin: 20px;
+    padding: 15px;
+    background-image: linear-gradient(to left bottom, #bacdb0, #b5d1a5, #afd69a, #a9da8f, #a3de83);
+    color: black;
+    border-radius: 10px;
+    box-shadow: -8px 8px 2px 0px rgba(0,0,0,0.1);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+
+article h3 {
+    font-size: 2em;
+    color: #2c3e50; 
+}
+
+article p {
+    font-size: 1.1em;
+    line-height: 1.6; 
+}
+
+article .precio {
+    font-size: 1.5em;
+    color: #e74c3c; 
+    font-weight: bold;
+}
+
 .container-img {
     display: flex;
     flex-direction: column;
@@ -54,6 +146,7 @@ body {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
 }
 .container-img img {
     border-radius: 8px;
@@ -90,19 +183,31 @@ ul, ol {
     margin-left: 20px;
     font-size: 14px;
 }
+.container-pro-all{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
 .container-tit{
     background-color: #9ad1a3;
     color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
 }
 .container-tex{
-    background-color: #729B79;
     color: white;
+    text-align: center;
+    flex-wrap: wrap;
 }
 .container-arr{
     display: flex;
+    gap: 100px;
 }
 .container-abj{
     display: flex;
+    gap: 100px;
 }
 .cuadro-informacion1 {
     width: 300px;
@@ -167,7 +272,92 @@ ul, ol {
 .social-menu ul.social-icons a:hover i {
     transform: scale(1.2); 
 }
-button{
+.div1 {
+    margin: 20px;
+    padding: 15px;
+    background-image: linear-gradient(to left bottom, #bacdb0, #b5d1a5, #afd69a, #a9da8f, #a3de83);
+    color: black;
+    border-radius: 10px;
+    box-shadow: -8px 8px 2px 0px rgba(0,0,0,0.1);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+.texto1 {
+    margin: 1px;
+    padding: 10px;
+    padding-left: 15px;
+    background-image: linear-gradient(to left bottom, #fff4ea, #f2e9d9, #e3dfc9, #d0d6bb, #bacdb0);
+    color: black;
+    border-radius: 8px;
+    box-shadow: -5px 5px 1px 0px rgba(0,0,0,0.1);
+}
+
+.container-productos1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.producto1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto1 h3 {
+    font-size: 1.5em;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.producto1 p {
+    color: #000000;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.buy-section{
+display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin-top: 10px; 
+}
+.precio {
+    font-size: 1.2em;
+    color: #369251;
+    font-weight: bold;
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+    
+}
+
+@media (max-width: 768px) {
+    .container-productos1 {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .container-productos1 {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.button{
     padding: 17px 40px;
     border-radius: 50px;
     border: 0;
@@ -178,18 +368,191 @@ button{
     font-size: 15px;
     transition: all .5s ease;
 }
-button:hover{
+.button:hover{
     letter-spacing: 3px;
-    background-color: #18dc53;
+    background-color: #9ad1a3;
     color: #fff;
-    box-shadow:#18dc53 0px 7px 29px 0px;
-}
+    box-shadow: #9ad1a3 0px 7px 29px 0px;
 
+}
 button:active{
     letter-spacing: 3px;
-    background-color: #18dc53;
+    background-color: #9ad1a3;
     color: #fff;
-    box-shadow: #18dc53 0px 0px 0px 0px;
+    box-shadow: #9ad1a3 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
+}
+.checkout-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    
+}
+
+/* Título */
+header h1 {
+    text-align: center;
+    margin-right: 100px;
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Título secundario */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Información del producto */
+#product-name, #product-price {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo de las etiquetas */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto en los campos cuando se enfocan */
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Estilo del botón */
+button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Modal (cuadro de agradecimiento) */
+#thank-you-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 9999;
+    max-width: 500px;
+    width: 100%;
+}
+
+#thank-you-modal h2 {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+#thank-you-modal p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Fondo oscuro del modal */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+/* Estilo para los botones de cantidad */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quantity-controls button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quantity-controls button:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-controls span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para los botones dentro del modal */
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.modal-buttons a {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-buttons a:hover {
+    background-color: #45a049;
 }

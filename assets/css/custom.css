@@ -7,7 +7,7 @@ body {
 header {
     background-color: #729B79;
     padding: 20px;
-    height: 20px;
+    height: 20px;   
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -366,7 +366,7 @@ display: flex;
     padding: 17px 40px;
     border-radius: 50px;
     border: 0;
-    background-color: white;
+    background-color: #4cc560;
     box-shadow: #0000000d 0 0 8px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -375,7 +375,7 @@ display: flex;
 }
 .button:hover{
     letter-spacing: 3px;
-    background-color: #9ad1a3;
+    background-color: rgb(252, 138, 138);
     color: #fff;
     box-shadow: #9ad1a3 0px 7px 29px 0px;
 
@@ -543,4 +543,15 @@ button:hover {
 
 .modal-buttons a:hover {
     background-color: #45a049;
+}
+
+.titulo-cheackout{
+    text-align: center;
+    margin-right: 100px;
+    color: #000000;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.titulo-cheackout-h1{
+    color: #000000;
 }

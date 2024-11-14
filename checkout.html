@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Compra</h1>
+    </header>
+
+    <div class="checkout-container">
+        <!-- Muestra el producto seleccionado -->
+        <h2>Producto seleccionado</h2>
+        <p id="product-name"></p>
+        <p id="product-price">Precio: $<span id="price">0</span></p>
+
+        <!-- Formulario de compra -->
+        <form id="checkout-form">
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div>
+                <label for="tarjeta">Número de tarjeta:</label>
+                <input type="text" id="tarjeta" name="tarjeta" required>
+            </div>
+
+            <!-- Controles de cantidad -->
+            <div>
+                <label for="cantidad">Cantidad:</label>
+                <div class="quantity-controls">
+                    <button type="button" id="decrease" onclick="updateQuantity(-1)">-</button>
+                    <span id="cantidad-display">1</span>
+                    <button type="button" id="increase" onclick="updateQuantity(1)">+</button>
+                </div>
+            </div>
+
+            <p>Total: $<span id="total-price">0</span></p>
+
+            <button type="submit">Finalizar compra</button>
+        </form>
+    </div>
+
+    <!-- Modal para mostrar el mensaje de agradecimiento -->
+    <div id="overlay"></div>
+    <div id="thank-you-modal">
+        <h2>Gracias por su compra</h2>
+        <p id="thank-you-message"></p>
+        <!-- Botones para redirigir -->
+        <div class="modal-buttons">
+            <a href="index.html">Volver al inicio</a> <!-- Cambia la URL si es necesario -->
+            <a href="productos.html">Ver todos los productos</a> <!-- Cambia la URL a tu página de productos -->
+        </div>
+    </div>
+    <script src="/script.js"> </script>
+
+    
+</body>
+</html>

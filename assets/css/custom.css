@@ -84,7 +84,7 @@ nav ul li a:hover::after {
 
 .productos-I {
     display: flex;
-    flex-direction: column; /* Cambiado a columna para apilar imagen debajo del texto */
+    flex-direction: column; 
     margin-top: 40px;
     background-color: #fff;
     padding: 15px;
@@ -98,7 +98,7 @@ nav ul li a:hover::after {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-top: 10px; /* Espacio adicional entre el texto y la imagen */
+    margin-top: 10px; 
 }
 
 .productos-I h3 {

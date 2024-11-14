@@ -74,6 +74,7 @@ nav ul li a:hover::after {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 .productos-G {
     display: grid;
@@ -82,8 +83,6 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 .productos-I {
-    display: flex;
-    margin-top: 40px;
     background-color: #fff;
     padding: 15px;
     border: 1px solid #ddd;
@@ -91,7 +90,6 @@ nav ul li a:hover::after {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .productos-I img {
     width: 100%;
     height: auto;

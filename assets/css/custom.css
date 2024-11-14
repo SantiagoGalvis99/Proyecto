@@ -106,8 +106,9 @@ nav ul li a:hover::after {
 footer {
     background-color: #2E2C2F;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 10px;
+    list-style: none;
 }
 article {
     margin: 20px;

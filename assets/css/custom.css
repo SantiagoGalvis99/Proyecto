@@ -604,3 +604,7 @@ button:hover {
     font-size: 1.5em;
     cursor: pointer;
 }
+
+.titulo-formulario-h1{
+    color: #000000;
+}

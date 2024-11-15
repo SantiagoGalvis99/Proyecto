@@ -475,3 +475,78 @@ footer div:last-child {
         display: none;
     }
 }
+
+.modal-compra {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1001;
+}
+
+.modal-contenido {
+    background-color: #475B63;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    color: #dfdde8;
+}
+
+.cerrar-modal {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #dfdde8;
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #dfdde8;
+}
+
+.form-grupo input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #729B79;
+    border-radius: 4px;
+    background-color: #2E2C2F;
+    color: #dfdde8;
+}
+
+#realizar-compra {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-2:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#lista-carrito tfoot {
+    border-top: 2px solid #729B79;
+}
+
+#lista-carrito tfoot td {
+    padding: 10px 5px;
+    color: #dfdde8;
+}
+
+#carrito-total {
+    font-weight: bold;
+    color: #dfdde8;
+}

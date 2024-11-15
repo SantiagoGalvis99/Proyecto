@@ -726,3 +726,24 @@ button:hover {
 .titulo-formulario-h1{
     color: #000000;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; 
+        flex-direction: column; 
+        width: 100%;
+        background-color: #f8f9fa;
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        z-index: 1000; 
+    }
+
+    nav ul.nav-open {
+        display: flex; 
+    }
+
+    #nav-toggle {
+        display: block; 
+    }
+}

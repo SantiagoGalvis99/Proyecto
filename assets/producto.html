@@ -1,118 +1,204 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Productos</title>
-    <link rel="stylesheet" href="./css/custom.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/productos.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./producto.html">Producto</a></li>
-                <li><a href="./acerca.html">Acerca de</a></li>
-                <li><a href="./contacto.html">Contactanos</a></li>
-            </ul>
-            <button id="nav-toggle" aria-label="toggle navigation"><img src="./img/menu.png" height="10px" width="10px"></button>
-        </nav>
-    </header>
-
-    <div class="container-productos1">
-
-        <div class="producto1">
-            <img src="./img/producto1.jpg" alt="Producto 1">
-                <article>
-                    <h3>Rafflesia arnoldii</h3>
-                    <p>Rafflesia arnoldii es una especie de planta parásita del género Rafflesia que se encuentra en los bosques húmedos de Indonesia, sobre todo en Sumatra y Borneo, y en las selvas del sudeste asiático, y que desarrolla la flor más grande del mundo.</p>
-                </article>
-                <div class="buy-section">
-                    <p class="precio">$2500.00</p>
-                    <a href="./checkout.html?product_name=Planta1&price=2500.00&image_url=https://www.elcolectivo.com.ar/u/fotografias/m/2023/7/7/f768x1-143016_143143_31.jpg">
-                        <button class="button">agregala al carrito</button>
-                    </a>
-                </div>
-        </div>
-
-       
-        <div class="producto1">
-            <img src="./img/producto2.jpg" alt="Producto 2">
-                <article>
-                    <h3>Dionea atrapamoscas</h3>
-                    <p>Dionaea muscipula es una pequeña planta cuya estructura está formada por una roseta de cuatro a ocho hojas que surgen de un corto tallo subterráneo de forma bulbosa. Cada tallo alcanza una altura máxima de entre 3,5 a 10 cm; dependiendo de la época del año.</p>
-                </article>
-                <div class="buy-section">
-                    <p class="precio">$1200.00</p>
-                    <a href="./checkout.html?product_name=Planta1&price=1200.00&image_url=https://www.elcolectivo.com.ar/u/fotografias/m/2023/7/7/f768x1-143016_143143_31.jpg">
-                        <button class="button">agregala al carrito</button>
-                    </a>
-                </div>
-        </div>
-
-        
-        <div class="producto1">
-            <img src="./img/producto3.jpg" alt="Producto 3">
-                <article>
-                    <h3>Dracunculus vulgaris</h3>
-                    <p>Es una planta perenne,por fuera verdosa y por el interior púrpura amarronada, la parte inferior enrollada, la superior casi plana con el borde ondulado.</p>
-                </article>
-                <div class="buy-section">
-                    <p class="precio">$500.00</p>
-                    <a href="./checkout.html?product_name=Planta1&price=500.00&image_url=https://www.elcolectivo.com.ar/u/fotografias/m/2023/7/7/f768x1-143016_143143_31.jpg">
-                        <button class="button">agregala al carrito</button>
-                    </a>
-                </div>
-        </div>
-
-        
-        <div class="producto1">
-            <img src="./img/producto4.jpg" alt="Producto 4">
-                <article>
-                    <h3>Welwitschia mirabilis</h3>
-                    <p>Es una planta desértica que crece de un tronco grueso escindiendo dos únicas hojas de crecimiento continuo. Tras la germinación, los cotiledones crecen 25-35 mm y se van transformando en estas dos hojas.</p>
-                </article>
-                <div class="buy-section">
-                    <p class="precio">$850.00</p>
-                    <a href="./checkout.html?product_name=Planta1&price=850.00&image_url=https://www.elcolectivo.com.ar/u/fotografias/m/2023/7/7/f768x1-143016_143143_31.jpg">
-                        <button class="button">agregala al carrito</button>
-                    </a>
-                </div>
-        </div>
-
-        
-        <div class="producto1">
-            <img src="./img/producto5.jpg" alt="Producto 5">
-                <article>
-                    <h3>Amorphophallus titanum</h3>
-                    <p>Esta especie es originaria de las selvas tropicales de Sumatra (Indonesia), y además de su extraordinario tamaño, posee otra característica que la hace única: desprende un fétido olor a carne podrida, lo que impide estar cerca de ella por mucho tiempo. Por esta razón se la ha denominado "flor cadáver".</p>
-            </article>
-            <div class="buy-section">
-                <p class="precio">$600.00</p>
-                <a href="./assets/checkout.html?product_name=Planta1&price=600.00&image_url=https://www.elcolectivo.com.ar/u/fotografias/m/2023/7/7/f768x1-143016_143143_31.jpg">
-                    <button class="button">agregala al carrito</button>
-                </a>
+    <header class="header">
+        <div class="menu container">
+            <input type="Checkbox" id="menu">
+            <label for="menu"><img src="./images/menu.png" class="menu-icono" alt="menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./producto.html">Productos</a></li>
+                    <li><a href="/acerca.html">Acerca de</a></li>
+                    <li><a href="/contacto.html">Contactenos</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar el carrito</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        
-        <div class="producto1">
-            <img src="./img/producto6.jpg" alt="Producto 6">
-                <article>
-                    <h3>Victoria amazonica</h3>
-                    <p>Se caracteriza por tener grandes hojas circulares de hasta 1 metro de diámetro que flotan sobre la superficie del agua sobre tallos sumergidos que alcanzan 7 a 8 m de largo. Pueden soportar hasta 40 kg si el peso se encuentra bien distribuido en su superficie.</p>
-                </article>
-                <div class="buy-section">
-                    <p class="precio">$950.00</p>
-                    <a href="./checkout.html?product_name=Planta1&price=950.00&image_url=https://www.elcolectivo.com.ar/u/fotografias/m/2023/7/7/f768x1-143016_143143_31.jpg">
-                        <button class="button">agregala al carrito</button>
-                    </a>
-                </div>
+    </header>
+    <section class="plantas container">
+        <div class="plantas-2">
+            <h3>Mas de <br> 6 plantas <br> EXOTICAS</h3>
         </div>
-    </div>
-    
+    </section>
+
+    <section class="plantas-t container" id="lista">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3>Rafflesia arnoldii</h3>
+                        <p class="precio">$2500</p>
+                        <img src="images/producto1.jpg" alt="">
+                        <p>
+                            Rafflesia arnoldii es una especie de planta parásita del género Rafflesia que se encuentra en los bosques húmedos de Indonesia, sobre todo en Sumatra y Borneo, y en las selvas del sudeste asiático, y que desarrolla la flor más grande del mundo.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3>Dionea atrapamoscas</h3>
+                        <p class="precio">$1200</p>
+                        <img src="images/producto2.jpg" alt="">
+                        <p>
+                            Dionaea muscipula es una pequeña planta cuya estructura está formada por una rosetna de cuatro a ocho hojas que surgen de un corto tallo subterráneo de forma bulbosa. Cada tallo alcanza una altura máxima de entre 3,5 a 10 cm; dependiendo de la época del año.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3>Dracunculus vulgaris</h3>
+                        <p class="precio">$500</p>
+                        <img src="images/producto3.jpg" alt="">
+                        <p>
+                            Es una planta perenne,por fuera verdosa y por el interior púrpura amarronada, la parte inferior enrollada, la superior casi plana con el borde ondulado.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3>Welwitschia mirabilis</h3>
+                        <p class="precio">$850</p>
+                        <img src="images/producto4.jpg" alt="">
+                        <p>
+                            Es una planta desértica que crece de un tronco grueso escindiendo dos únicas hojas de crecimiento continuo. Tras la germinación, los cotiledones crecen 25-35 mm y se van transformando en estas dos hojas.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3>Amorphophallus titanum</h3>
+                        <p class="precio">$1300</p>
+                        <img src="images/producto5.jpg" alt="">
+                        <p>
+                            Esta especie es originaria de las selvas tropicales de Sumatra (Indonesia), y además de su extraordinario tamaño, posee otra característica que la hace única: desprende un fétido olor a carne podrida, lo que impide estar cerca de ella por mucho tiempo. Por esta razón se la ha denominado "flor cadáver".
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3>Victoria amazonica</h3>
+                        <p class="precio">$600</p>
+                        <img src="images/producto6.jpg" alt="">
+                        <p>
+                            Se caracteriza por tener grandes hojas circulares de hasta 1 metro de diámetro que flotan sobre la superficie del agua sobre tallos sumergidos que alcanzan 7 a 8 m de largo. Pueden soportar hasta 40 kg si el peso se encuentra bien distribuido en su superficie.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="plantas container">
+        <div class="plantas-2">
+            <h3>Muchos <br> tipos <br>  de flores</h3>
+        </div>
+    </section>
+
+    <section class="plantas-t container" id="lista-2">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3 class="c1">Peonía Itoh</h3>
+                        <p class="precio">$2500</p>
+                        <img src="images/Flor 1.png" alt="">
+                        <p class="c2">
+                            Si estás pensando en una de las flores más codiciadas pero también más bellas del mundo, puede que esta te convenza. Híbridos entre peonías arbustivas y herbáceas, conocidas por su precio debido a su belleza y rareza. Estos híbridos únicos llevan el nombre de Toichi Itoh, el primer horticultor en lograr con éxito este cruce en la década de 1940 en Japón.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3 class="c1">Amapola de Islandia</h3>
+                        <p class="precio">$1200</p>
+                        <img src="images/flor 2.png" alt="">
+                        <p class="c2">
+                            La amapola de Islandia, también conocida como Papaver Nudicaule, es una flor silvestre que crece en los climas fríos de Islandia, Siberia y otras partes del norte de Europa y Asia. Es una flor perenne, que florece desde finales de la primavera hasta principios del verano, con una variedad de colores brillantes que van desde el blanco, amarillo, rosa, naranja, rojo y púrpura. 
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3 class="c1">Flor de cactus de noche</h3>
+                        <p class="precio">$500</p>
+                        <img src="images/flor 3.png" alt="">
+                        <p class="c2">
+                            La Flor de Cactus de Noche, también conocida como "Reina de la Noche" o "Flor de la Luna", es una de las flores más codiciadas y raras del mundo que pertenece a la familia de los cactus. Es nativa de América Central y del Sur, y es conocida por su floración nocturna, que comienza al anochecer y dura solo unas pocas horas.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flores1">
+                        <h3 class="c1">Flor de chocolate </h3>
+                        <p class="precio">$850</p>
+                        <img src="images/flor 4.png" alt="">
+                        <p class="c2">
+                            Cosmos atrosanguineus tiene un color rojizo espectacular. Antes crecía en algunas regiones de México, pero ahora solo existe un clon y la original puede considerarse como extinguida. Además de sus llamativos pétalos, esta flor también recuerda al chocolate por su aroma a vainilla y cacao. 
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
     <footer>
-        <div class="contenerdor-info">
+        <div>
             <h1>Paraiso verde</h1>  <br>
             <ul>
                 <li>Local principal - Barranquilla - Colombia</li> <br>
@@ -140,6 +226,7 @@
             Copyright &copy; 2024 - Paraiso Verde | Diseñado por: Grupo 2
         </div>
     </footer>
-    <script src="./js/formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
